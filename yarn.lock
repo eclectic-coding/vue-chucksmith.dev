@@ -1238,7 +1238,7 @@
     thread-loader "^2.1.3"
     webpack "^4.0.0"
 
-"@vue/cli-plugin-eslint@~4.5.0":
+"@vue/cli-plugin-eslint@~4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@vue/cli-plugin-eslint/-/cli-plugin-eslint-4.5.6.tgz#d6721bc96f797b9d978e13bd0afd39999f92caf1"
   integrity sha512-maG3dy64pGVT9mMQq7KvP6kbBK6TeVgcj1aa1QwzT5yrw65E2So8bKMrEMEjy53b88bgR9jZ7gshOks00jrYsg==
@@ -3550,14 +3550,14 @@ eslint-loader@^2.2.1:
     object-hash "^1.1.4"
     rimraf "^2.6.1"
 
-eslint-plugin-prettier@^3.1.3:
+eslint-plugin-prettier@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
   integrity sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-vue@^7.0.0-0:
+eslint-plugin-vue@^7.0.0-beta.4:
   version "7.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.0.0-beta.4.tgz#aa13b946702c4de1b8f7c3467698185775b11fdb"
   integrity sha512-yb8Kki8b94a3A1sGum9TyVAkvPfKGPzWfZcXRmA2Tylt7TRi+b6mOtn1o6kM3NWatBs5gcGiCrH033DDPn0Msw==
