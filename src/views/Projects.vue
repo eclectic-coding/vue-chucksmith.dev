@@ -1,35 +1,36 @@
 <template>
-  <div class="mx-4 rounded bg-gray-400 shadow">
-    <div class="p-2">
-      <div class="font-bold">Recent Projects</div>
-    </div>
-    <div class="bg-white p-2 border-2 border-gray-400">
-      <div v-for="project in projects" :key="project.id">
-        {{ project.displayName }}
-        <div v-if="project.githubUrl">{{ project.githubUrl }}</div>
-        <div v-if="project.summary">{{ project.summary }}</div>
+  <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap mt-2 mx-auto">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+      >
+        <ProjectCard
+          :img="project.images[0].resolutions.desktop.url"
+          :title="project.displayName"
+          :summary="project.summary"
+          :github="project.githubUrl"
+          :website="project.website"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import useProjects from "@/composables/projects";
+import { onMounted } from "vue";
+import ProjectCard from "@/components/ProjectCard.vue";
+
 export default {
-  data() {
-    return {
-      projects: [],
-    };
+  setup() {
+    const { projects, fetchProjects } = useProjects();
+    onMounted(() => fetchProjects());
+    return { projects };
   },
-  methods: {
-    fetchPosts() {
-      fetch("https://gitconnected.com/v1/portfolio/eclectic-coding")
-        .then((response) => response.json())
-        .then((data) => (this.projects = data.projects));
-    },
-  },
-  mounted() {
-    this.fetchPosts();
-    console.log(this.projects);
+  components: {
+    ProjectCard,
   },
 };
 </script>
