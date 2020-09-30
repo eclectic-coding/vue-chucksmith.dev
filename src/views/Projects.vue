@@ -19,15 +19,15 @@
 </template>
 
 <script>
-import useProjects from "@/composables/projects";
+import useUserObject from "@/composables/userObject";
 import { onMounted } from "vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 
 export default {
   setup() {
-    const { projects, fetchProjects } = useProjects();
-    onMounted(() => fetchProjects());
-    return { projects };
+    const { projects, fetchObjects, education } = useUserObject();
+    onMounted(() => fetchObjects());
+    return { projects, education };
   },
   components: {
     ProjectCard,
