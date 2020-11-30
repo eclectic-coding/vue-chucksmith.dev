@@ -17,7 +17,7 @@
     "sass-loader": "^10.1.0",
     "tailwindcss": "^1.9.6",
     "vue": "^3.0.3",
-    "vue-router": "^4.0.0-rc.5",
+    "vue-router": "^4.0.0-rc.6",
     "vuex": "^4.0.0-rc.2"
   },
   "devDependencies": {
