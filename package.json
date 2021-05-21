@@ -13,7 +13,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/vue-fontawesome": "^3.0.0-3",
     "core-js": "^3.12.1",
-    "sass": "^1.32.13",
+    "sass": "^1.33.0",
     "sass-loader": "^10.2.0",
     "tailwindcss": "^1.9.6",
     "vue": "^3.0.11",
